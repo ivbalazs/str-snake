@@ -16,21 +16,21 @@ export default abstract class BaseGame implements IBaseGame {
 
     protected noClip: boolean = false;
 
-    head: Piece;
+head: Piece;
 
     tail: Piece;
 
-    food: Piece | null;
+    food: Piece | null = null;
 
-    goldenApple: Piece | null;
+    goldenApple: Piece | null = null;
 
-    length: number | 0;
+    length: number = 0;
 
-    growth: number | 0;
+    growth: number = 0;
 
-    score: number | 0;
+    score: number = 0;
 
-    currentLevel: Level | null;
+    currentLevel: Level | null = null;
 
     garden: HTMLDivElement;
 
