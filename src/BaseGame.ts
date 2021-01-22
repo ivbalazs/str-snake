@@ -16,7 +16,7 @@ export default abstract class BaseGame implements IBaseGame {
 
     protected noClip: boolean = false;
 
-    head: Piece;
+head: Piece;
 
     tail: Piece;
 
