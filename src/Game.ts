@@ -188,7 +188,7 @@ export default class Game extends BaseGame {
         this.growth += 1; // Snake got bigger
       }
 
-      this.updateScore(type === 'food' ? 10 : 50); // Calculate the new score
+      this.updateScore(type === 'food' ? 1 : -2); // Calculate the new score
       this.showScore(); // Update the score
     }
   }
@@ -364,11 +364,11 @@ export default class Game extends BaseGame {
           break;
         // Slowdown the snake
         case keys.J:
-          this.debugSpeed += 10;
+          this.debugSpeed += 10;          
           break;
           // Speed up the snake
         case keys.K:
-          this.debugSpeed -= 10;
+          this.debugSpeed -= 10;          
           break;
         // Pause or restart the game
         case keys.SPACE:
