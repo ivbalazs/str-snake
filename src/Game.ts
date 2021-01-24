@@ -262,6 +262,7 @@ export default class Game extends BaseGame {
   showScore (): void {
     const points = document.getElementById('points') as HTMLDivElement;
 
+    if (this.score === 20) this.score = 0;
     // Speed: ${Math.floor(1000 / this.getSpeed())}bps
     points.innerHTML = `${this.score}`;
   }
